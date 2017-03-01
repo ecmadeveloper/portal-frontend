@@ -1,11 +1,8 @@
 <div class="container">
-	<h1>
-		{{title}}
-	</h1>
+	<nav>
+		<a routerLink="/" routerLinkActive="active">Home</a>
+		<a routerLink="/login" routerLinkActive="active">Log In</a>
+	</nav>
 
-	<p>
-		<ngb-alert [dismissible]="false" type="info">
-			<strong>Just a moment!</strong> We are working on it. Coming soon...
-		</ngb-alert>
-	</p>
-</div>	
+	<router-outlet></router-outlet>
+</div>
